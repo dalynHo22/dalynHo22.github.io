@@ -1,10 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>My GitHub Page</title>
+  <title>Tables and Forms</title>
+  <style>
+  main {
+    margin-bottom: 60px;
+  }
+</style>
 </head>
+
 <body>
-  <h1>Hello world 👋</h1>
-  <p>This is my GitHub Pages site.</p>
+
+  <main>
+    <form>
+
+      <header>
+        <h1>Pizza Ordering Form</h1>
+      </header>
+
+      <section>
+        <h2>Contact Information</h2>
+
+        <label for="inName">Name:</label>
+        <input type="text" name="inName" id="inName" required><br>
+
+        <label for="inPhone">Phone:</label>
+        <input type="tel" name="inPhone" id="inPhone" required><br>
+
+        <label for="inEmail">Email:</label>
+        <input type="email" name="inEmail" id="inEmail" required><br>
+      </section>
+
+      <section>
+        <h2>Select Pizza Size</h2>
+
+        <label for="pizzaSize">Pizza Size:</label>
+        <select name="pizzaSize" id="pizzaSize" required>
+          <option value="" disabled selected>--Select Size--</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+          <option value="xLarge">XLarge</option>
+        </select>
+      </section>
+
+      <section>
+        <h2>Select Sauce</h2>
+
+        <input type="radio" name="sauceSelection" value="marinara" required>
+        Marinara<br>
+
+        <input type="radio" name="sauceSelection" value="white">
+        White Sauce<br>
+
+        <input type="radio" name="sauceSelection" value="spicy">
+        Spicy Marinara<br>
+      </section>
+
+      <section>
+        <h2>Select Toppings</h2>
+
+        <input type="checkbox" name="pepperoni" id="pepperoni">
+        <label for="pepperoni">Pepperoni</label>
+
+        <input type="checkbox" name="sausage" id="sausage">
+        <label for="sausage">Sausage</label><br>
+
+        <input type="checkbox" name="mushroom" id="mushroom">
+        <label for="mushroom">Mushroom</label>
+
+        <input type="checkbox" name="chicken" id="chicken">
+        <label for="chicken">Chicken</label><br>
+
+        <input type="checkbox" name="grapeTomato" id="grapeTomato">
+        <label for="grapeTomato">Grape Tomatoes</label>
+
+        <input type="checkbox" name="basil" id="basil">
+        <label for="basil">Basil</label>
+      </section>
+
+      <section>
+        <h2>Additional Instructions</h2>
+
+        <textarea name="instructions">Add instructions</textarea><br>
+      </section>
+
+      <input type="submit" value="Submit"><br>
+
+    </form>
+  </main>
+
+  <section>
+    <table border="1">
+      <caption>List of My Favorite Games</caption>
+
+      <tr>
+        <th>Developer</th>
+        <th>Title</th>
+        <th>Year</th>
+      </tr>
+
+      <tr>
+        <td rowspan="3">Bungie</td>
+        <td>Halo 1</td>
+        <td>2001</td>
+      </tr>
+
+      <tr>
+        <td>Halo 2</td>
+        <td>2004</td>
+      </tr>
+
+      <tr>
+        <td>Halo 3</td>
+        <td>2007</td>
+      </tr>
+
+      <tr>
+        <td>Mojang</td>
+        <td>Minecraft</td>
+        <td>2011</td>
+      </tr>
+
+      <tr>
+        <td colspan="3">Count: 4</td>
+      </tr>
+
+    </table>
+  </section>
+
 </body>
 </html>
+
+
