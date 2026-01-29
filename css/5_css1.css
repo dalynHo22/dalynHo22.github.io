@@ -1,1 +1,93 @@
+* {
+    background-color:lightblue;
+}
+
+h1,h2{
+    font-family: 'arial', 'vernanda', sans-serif;
+}
+
+h3,p,li{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3{
+    font-size: 18px;
+}
+
+h1{
+    font-size: 48px;
+    text-align: center;
+}
+
+h2{
+    font-size: 25px;
+}
+
+p,li{
+    font-size: 13.6px;
+}
+
+
+/* # for id */
+#paragraph2{
+    border:4px solid green;
+    background-color: white;
+    padding: 20px; 
+    margin: 10px 0 10px 20px;
+    width:730px;
+    line-height: 1.8em;
+
+
+}
+
+/* . for class */
+.blue{
+    background-color:darkblue;
+    color:azure;
+    padding: 15px; 
+}
+
+ol{
+    list-style-type: decimal-leading-zero;
+    line-height: 1.4em;
+    /* "relative" takes into account surroundings; unlike "absolute" which doesn't*/
+    position: relative; 
+    left:-15px; 
+    
+}
+
+table, th, td {
+  border: 1px solid #333; /* Sets a 1px solid border with a dark gray color */
+}
+
+table {
+  border-collapse: collapse; /* Collapses borders into a single line */
+}
+
+/*table header*/
+th{
+    background-color: lightgray;
+    font-size: 14px;
+    
+}
+
+/*table cells*/
+td{
+    background-color: white;
+    font-size: 14px;
+    padding: 7px;
+}
+
+article a{
+    color: darkblue;
+}
+
+article li{
+    font-size: 15px;
+}
+
+section a{
+    color: darkred;
+}
+
 
