@@ -1,0 +1,180 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== LEFT SIDEBAR ===== */
+#menuItems {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100vh;
+    /*removed 15px padding*/
+    padding: 0px;
+    background-color: #B8916A;
+    border-right: 2px solid #A97D51;
+}
+
+/* Sidebar Buttons */
+#menuItems button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    cursor: pointer;
+
+    background-color: #BF6EAA;
+    color: #F7F2EE;
+    border: none;
+    border-bottom: 2px solid #B860A2;
+    font-size: 1em;
+    text-align: center;
+}
+
+#recentArticles:hover {
+    background-color: #8FDBA5;
+    color:#604f5e;
+}
+
+/* Hover effect for Services / Mission / About Us buttons */
+#menuItems button:hover {
+    background-color: #8FDBA5;
+    color: #604f5e;
+}
+
+/* ===== JUMP MENU ===== */
+#jumpMenu {
+    display: none;
+    list-style: none;
+    background-color: #8FDBA5;
+    margin-bottom: 15px;
+}
+
+#jumpMenu a {
+    display: block;
+    padding: 6px 0;
+    color: #F7F2EE;
+    text-decoration: none;
+    text-align: center;
+}
+
+#jumpMenu a:hover {
+    background-color: #BF6EAA;
+    color: #604f5e;
+}
+
+/*If the parent is hovered, show the child*/
+/*When #menuItems is being hovered, apply this style to #jumpMenu inside it*/
+/* Show articles when hovering Recent Articles */
+/*Doesn't work without +, */
+#recentArticles:hover + #jumpMenu,
+#jumpMenu:hover { /*makes sure Jumpmenu doesn't close during usage*/
+    display: block;
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+    margin-left: 15%;
+    padding: 90px 20px 20px;
+    background-color: #F7F2EE;
+}
+
+/* ===== HEADER ===== */
+header {
+    position: fixed;
+    top: 0;
+    left: 15%;
+    width: 85%;
+    height: 70px;
+    background-color: #CF91BE;
+    color: #F7F2EE;
+    border-bottom: 2px solid #BF6EAA;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+header p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* ===== PAGE TITLE ===== */
+h1 {
+    margin-bottom: 20px;
+    color: #7B6578;
+}
+
+/* ===== ARTICLES ===== */
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #7B6578;
+}
+
+article {
+    width: 300px;
+    padding: 15px;
+    border: 3px solid #D0BEC5;
+    background-color: #E1D6DB;
+
+    color: #b2a4ab;              /* lightly-colored text */
+    transform: scale(1);         /* og size */
+
+    transition:
+        color 2s ease, transform 2s ease;
+}
+
+/* Hover state */
+article:hover {
+    color: #524757;              /* darker text */
+    transform: scale(1.08);      /* article expands */
+}
+
+/*Times New Roman the first letter of the articles*/
+article p:first-of-type::first-letter {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+}
+
+/* Add arrow image after links that go to Google */
+a[href*="google.com"]::after {
+    content: "";
+    display: inline-block;
+
+    width: 15px;          
+    height: 15px;
+
+    background-image: url("arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+/* ===== THANK YOU ===== */
+#thanks {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #8FDBA5;
+    padding: 10px 15px;
+    border: 2px solid #5DCB7C;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 2px solid #D0BEC5;
+}
