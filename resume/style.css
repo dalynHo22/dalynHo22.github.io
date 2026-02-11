@@ -59,6 +59,13 @@ header a:hover {
   text-decoration: underline;
 }
 
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px;
+  margin-left: 6px;
+}
+
 /* ===== Sections ===== */
 main {
   margin-top: 20px;
