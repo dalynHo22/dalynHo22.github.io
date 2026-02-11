@@ -61,9 +61,11 @@ header a:hover {
 
 .icon-link {
   display: inline-flex;
-  align-items: center;
   padding: 4px;
   margin-left: 6px;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
 }
 
 /* ===== Sections ===== */
