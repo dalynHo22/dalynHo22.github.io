@@ -110,6 +110,25 @@ section a {
   color: var(--accent);
 }
 
+/* ===== Back to Navigation ===== */
+.back-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: rgba(167, 139, 250, 0.15);
+  border: 1px solid var(--border);
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.back-btn:hover,
+.back-btn:focus-visible {
+  background: rgba(167, 139, 250, 0.25);
+  outline: none;
+}
+
 /* ===== Footer ===== */
 footer {
   margin-top: 40px;
