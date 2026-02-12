@@ -31,10 +31,25 @@ function showOddNumbers(){
     let oddResults = " ";
     
     for(let i = 1; i<= counter; i++){
-        if(i % 2 !== 0 ){
-            oddResults += i + " ";
+        if(i % 2 !== 0 ){ //!== (Strict Not Equal): Compares value AND type with No automatic conversion
+            oddResults += i + " "; //!=(Loose Not Equal): Compares values with Automatica type conversion (type coercion)
         }
     }
     document.getElementById("oddNumberResult").textContent = oddResults; 
 
+}
+
+function addMultiplesToArray(){
+    let arr = [ ];
+
+    for (let i = counter; i >= 5; i--){
+        if(i % 5 === 0){
+            arr.push(i);
+        }
+    }
+
+    /* == (loose equality): Checks value & Automatically converts types (type coercion) */
+    /* === (strict equality): Checks value & Checks type & No automatic conversion */
+
+    console.log(arr);
 }
