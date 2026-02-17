@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <display-name>
+        CNT 4714 Project 4 Fall 2025
+    </display-name>
+
+    <description>
+        Three-tier distributed web-based application
+    </description>
+
+    <!-- Welcome file (loads login page by default) -->
+    <welcome-file-list>
+        <welcome-file>authentication.html</welcome-file>
+    </welcome-file-list>
+
+
+    <!-- ===================== -->
+    <!-- SERVLET DEFINITIONS   -->
+    <!-- ===================== -->
+
+    <servlet>
+        <servlet-name>Authentication</servlet-name>
+        <servlet-class>Authentication</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Authentication</servlet-name>
+        <url-pattern>/Authentication</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ClientUser</servlet-name>
+        <servlet-class>ClientUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClientUser</servlet-name>
+        <url-pattern>/ClientUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RootUser</servlet-name>
+        <servlet-class>RootUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RootUser</servlet-name>
+        <url-pattern>/RootUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AccountantUser</servlet-name>
+        <servlet-class>AccountantUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AccountantUser</servlet-name>
+        <url-pattern>/AccountantUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DataEntryUser</servlet-name>
+        <servlet-class>DataEntryUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DataEntryUser</servlet-name>
+        <url-pattern>/DataEntryUser</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication - TQT</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-box {
+            background: #4a4a4a;
+            border-radius: 15px;
+            padding: 30px 40px;
+            margin-bottom: 40px;
+            width: 80%;
+            max-width: 900px;
+        }
+
+        h1 {
+            color: #FFD700;
+            font-size: 28pt;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        
+        h2 {
+            color: #00FF00;
+            font-size: 20pt;
+            margin: 10px 0;
+            font-weight: normal;
+        }
+        
+        h3 {
+            color: #FF4444;
+            font-size: 18pt;
+            margin: 15px 0;
+            font-weight: normal;
+        }
+
+        .form-box {
+            background: #4a4a4a;
+            border-radius: 15px;
+            padding: 40px;
+            width: 400px;
+        }
+
+        .form-group {
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            color: #FFD700;
+            font-size: 18pt;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16pt;
+            border: 2px solid #666;
+            border-radius: 5px;
+            background: #666;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus, input[type="password"]:focus {
+            outline: none;
+            border-color: #FFD700;
+        }
+
+        .submit-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        input[type="submit"] {
+            background: #00AA00;
+            color: white;
+            font-size: 16pt;
+            font-weight: bold;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background: #00CC00;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-box">
+        <h1>Welcome to the Fall 2025 Project 4 Enterprise System</h1>
+        <h2>A Servlet/JSP-based Multi-tiered Enterprise Application Using A Tomcat Container</h2>
+        <h3>- User Authentication Page -</h3>
+    </div>
+    
+    <div class="form-box">
+        <form action="Authentication" method="post">
+            <div class="form-group">
+                <label for="username">UserName</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="submit-container">
+                <input type="submit" value="Click To Authenticate">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
