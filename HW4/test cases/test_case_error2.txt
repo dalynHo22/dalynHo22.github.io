@@ -1,0 +1,9 @@
+procedure p;
+begin
+  y := 10
+end;
+
+begin
+  call p
+end.
+
