@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Three-Tier Distributed Web Application</title>
+</head>
+
+<body>
+  <header>
+    <h1>Three-Tier Distributed Web-Based Application</h1>
+    <p>Fall 2025 CNT 4714 — Database Systems</p>
+    <nav>
+      <a href="index.html">Back to Resume</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <figure>
+        <img
+          src="../images/project3.png"
+          alt="Three-tier web application displaying role-based JSP interface and SQL results"
+          width="400">
+        <figcaption>
+          Role-based JSP interface executing SQL commands with dynamic results display
+        </figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Project Description</h2>
+      <p>
+        This project implements a three-tier distributed web-based application using
+        JSP, Servlets, JDBC, and MySQL deployed on Apache Tomcat.
+        The system supports four role-based user interfaces (root, client,
+        data-entry, accountant) with controlled database access.
+      </p>
+      <p>
+        The middle tier processes SQL commands, executes prepared statements,
+        calls stored procedures, and applies server-side business logic without
+        using database triggers. Database connections are managed through
+        role-specific <code>.properties</code> files.
+      </p>
+    </section>
+
+    <section>
+      <h2>Key Features</h2>
+      <ul>
+        <li>Four role-based JSP front-end interfaces with secure authentication</li>
+        <li>Servlet-based middle tier handling SQL queries and updates</li>
+        <li>JDBC integration using Statement, PreparedStatement, and CallableStatement</li>
+        <li>Server-side business logic for supplier status updates</li>
+        <li>Remote stored procedure execution for accountant-level reporting</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills Learned</h2>
+      <ul>
+        <li>Object-oriented Java web development</li>
+        <li>JDBC database connectivity and SQL execution</li>
+        <li>Apache Tomcat deployment and configuration</li>
+        <li>Role-based database security and privilege management</li>
+        <li>Exception handling and dynamic HTML response generation</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Dalyn Ho</p>
+  </footer>
+</body>
+</html>
